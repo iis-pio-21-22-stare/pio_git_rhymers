@@ -3,7 +3,7 @@ package edu.kis.vh.nursery;
 //https://cezarywalenciuk.pl/blog/programing/skorty-kalwiszowe-eclipse
 //Alt + ← and Alt + → Wracasz do miejsc, które wcześniej odwiedzałeś.
 
-public class HanoiRhymer extends defaultCountingOutRhymer {
+public class HanoiRhymer extends DefaultCountingOutRhymer {
 
 	int totalRejected = 0;
 
