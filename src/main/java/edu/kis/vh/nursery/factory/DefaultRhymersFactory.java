@@ -28,3 +28,4 @@ public class DefaultRhymersFactory implements Rhymersfactory {
     }
 
 }
+//alt + -> przelacza pliki ktore sa obecnie fokusowane na ekranie
