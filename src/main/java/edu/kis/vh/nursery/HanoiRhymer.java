@@ -14,5 +14,5 @@ public class HanoiRhymer extends defaultCountingOutRhymer {
         else
             super.countIn(in);
     }
-    // alt + ← przeskakuyje po poszczególnych słowach
+    // alt + ← przeskakuyje po plikach
 }
