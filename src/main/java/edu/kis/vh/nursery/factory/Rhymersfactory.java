@@ -4,12 +4,12 @@ import edu.kis.vh.nursery.defaultCountingOutRhymer;
 
 public interface Rhymersfactory {
 
-    defaultCountingOutRhymer GetStandardRhymer();
+    defaultCountingOutRhymer getStandardRhymer();
 
-    defaultCountingOutRhymer GetFalseRhymer();
+    defaultCountingOutRhymer getFalseRhymer();
 
-    defaultCountingOutRhymer GetFIFORhymer();
+    defaultCountingOutRhymer getFIFORhymer();
 
-    defaultCountingOutRhymer GetHanoiRhymer();
+    defaultCountingOutRhymer getHanoiRhymer();
 
 }
