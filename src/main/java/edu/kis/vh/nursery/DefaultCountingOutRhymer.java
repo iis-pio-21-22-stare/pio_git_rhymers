@@ -5,7 +5,7 @@ public class DefaultCountingOutRhymer {
 	public static final int LAST_INDEX = 11;
 	public static final int NUM_OF_NUMBERS = 12;
 	public static final int NO_ELEMENTS = -1;
-	private int[] numbers = new int[NUM_OF_NUMBERS];
+	private final int[] numbers = new int[NUM_OF_NUMBERS];
 
 	public int total = NO_ELEMENTS;
 
