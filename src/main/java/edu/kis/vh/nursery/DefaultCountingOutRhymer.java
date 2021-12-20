@@ -4,9 +4,7 @@ public class DefaultCountingOutRhymer {
 
     private final int ARRAY_ELEMENTS = 12;
 
-    private final int FULL_NUMBER = 11;
-
-    private int[] numbers = new int[ARRAY_ELEMENTS];
+    private final int[] numbers = new int[ARRAY_ELEMENTS];
 
     public int total = -1;
 
@@ -19,6 +17,7 @@ public class DefaultCountingOutRhymer {
     }
 
     public boolean isFull() {
+        int FULL_NUMBER = 11;
         return total == FULL_NUMBER;
     }
 
