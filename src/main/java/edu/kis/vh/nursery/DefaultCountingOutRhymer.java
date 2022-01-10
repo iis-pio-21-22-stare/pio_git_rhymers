@@ -7,7 +7,7 @@ public class DefaultCountingOutRhymer {
     public static final int TOTAL_VALUE = -1;
     public static final int ERROR_VALUE = -1;
     public static final int INT11 = 11;
-    private int[] numbers = new int[INT12];
+    private final int[] numbers = new int[INT12];
 
 
     public int total = TOTAL_VALUE;
