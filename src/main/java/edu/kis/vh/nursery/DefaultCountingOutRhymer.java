@@ -8,6 +8,7 @@ public class DefaultCountingOutRhymer {
 
     public int total = TOTAL_VAL;
     private final int[] numbers = new int[NUMBERS_SIZE];
+    //tablica numbers została zmieniona na final podczas poprzednich laboratoriów
 
     public void countIn(int in) {
         if (!isFull())
