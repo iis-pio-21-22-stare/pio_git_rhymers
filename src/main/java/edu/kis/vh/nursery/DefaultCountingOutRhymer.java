@@ -5,9 +5,9 @@ public class DefaultCountingOutRhymer {
     private int[] numbers = new int[12];
 
     public int total = -1;
-    public static int FULL = 11;
-    public static int CALL = -1;
-    public static int CALL_CHECKED = -1;
+    public static final int FULL = 11;
+    public static final int CALL = -1;
+    public static final int CALL_CHECKED = -1;
 
     public void countIn(int in) {
         if (!isFull())

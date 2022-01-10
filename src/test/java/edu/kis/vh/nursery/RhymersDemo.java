@@ -5,9 +5,9 @@ import edu.kis.vh.nursery.factory.RhymersFactory;
 
 class RhymersDemo {
 
-	public static int BOUND = 20;
-	public static int REJECTED_INDEX = 3;
-	public static String REJECTED_TEXT = "total rejected is ";
+	public static final int BOUND = 20;
+	public static final int REJECTED_INDEX = 3;
+	public static final String REJECTED_TEXT = "total rejected is ";
 
 	public static void main(String[] args) {
 		RhymersFactory factory = new DefaultRhymersFactory();
