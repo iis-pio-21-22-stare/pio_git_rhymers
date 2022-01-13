@@ -1,21 +1,21 @@
 package edu.kis.vh.nursery;
+// alt + strzałka -> sprawne przemieszczanie się pomiędzy plikami w  projekcie
+ final public class FIFORhymer extends DefaultCountingOutRhymer {
 
-public class FIFORhymer extends defaultCountingOutRhymer {
+    public DefaultCountingOutRhymer temp = new DefaultCountingOutRhymer();
 
-	public defaultCountingOutRhymer temp = new defaultCountingOutRhymer();
-	
-	@Override
-	public int countOut() {
-		while (!callCheck())
-			
-		temp.countIn(super.countOut());
-		
-		int ret = temp.countOut();
-		
-		while (!temp.callCheck())
-			
-		countIn(temp.countOut());
-		
-		return ret;
-	}
+    @Override
+    public int countout() {
+        while (!callcheck())
+
+            temp.countin(super.countout());
+
+        int ret = temp.countout();
+
+        while (!temp.callcheck())
+
+            countin(temp.countout());
+
+        return ret;
+    }
 }
