@@ -4,14 +4,14 @@ public class HanoiRhymer extends DefaultCountingOutRhymer {
 
     int totalRejected = 0;
 
-    public int reportRejected() {
+    public int reportrejected() {
         return totalRejected;
     }
 
-    public void countIn(int in) {
-        if (!callCheck() && in > peekaboo())
+    public void countin(int in) {
+        if (!callcheck() && in > peekaboo())
             totalRejected++;
         else
-            super.countIn(in);
+            super.countin(in);
     }
 }
