@@ -10,3 +10,5 @@ public class Node {
 	}
 	
 }
+
+// alt + strzalka (lewo/prawo) pozwala na poruszanie sie po plikach projektu
