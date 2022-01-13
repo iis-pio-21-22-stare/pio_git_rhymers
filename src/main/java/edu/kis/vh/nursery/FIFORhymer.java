@@ -1,5 +1,5 @@
 package edu.kis.vh.nursery;
-
+// alt + strzałka -> sprawne przemieszczanie się pomiędzy plikami w  projekcie
 public class FIFORhymer extends defaultCountingOutRhymer {
 
     public defaultCountingOutRhymer temp = new defaultCountingOutRhymer();
