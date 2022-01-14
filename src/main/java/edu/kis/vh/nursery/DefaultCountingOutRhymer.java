@@ -4,7 +4,7 @@ public class DefaultCountingOutRhymer {
 
     public static final int SIZE_OF_ARRAY = 12;
     public static final int CHECK = -1;
-    private int[] numbers = new int[SIZE_OF_ARRAY];
+    private final int[] numbers = new int[SIZE_OF_ARRAY];
 
     public int total = CHECK;
 
