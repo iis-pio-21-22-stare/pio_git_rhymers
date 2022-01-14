@@ -1,17 +1,21 @@
 package edu.kis.vh.nursery;
 
-public class HanoiRhymer extends defaultCountingOutRhymer {
+public class HanoiRhymer extends DefaultCountingOutRhymer {
 
-int totalRejected = 0;
+	int totalRejected = 0;
 
 	public int reportRejected() {
 		return totalRejected;
 	}
 
+	@Override
 	public void countIn(int in) {
-	if (!callCheck() && in > peekaboo())
+		if (!callCheck() && in > peekaboo())
 			totalRejected++;
-			else
-				super.countIn(in);
+		else
+			super.countIn(in);
 	}
 }
+
+//źle sformatowane były wiersze o numerze 5, 12, 14, 15
+//skrót alt <- / alt -> przełaczaja akutalnie otwarte karty lewo/prawo
