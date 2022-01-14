@@ -3,13 +3,13 @@ package edu.kis.vh.nursery;
 import edu.kis.vh.nursery.factory.DefaultRhymersFactory;
 import edu.kis.vh.nursery.factory.RhymersFactory;
 
-class RhymersDemo {
+ class RhymersDemo {
 
-	public static final int FIFTEEN = 15;
-	public static final int THREE = 3;
-	public static final int TWENTY = 20;
+	 private static final int FIFTEEN = 15;
+	 private static final int THREE = 3;
+	 private static final int TWENTY = 20;
 
-	public static void main(String[] args) {
+	 private static void main(String[] args) {
 		RhymersFactory factory = new DefaultRhymersFactory();
 		
 		DefaultCountingOutRhymer[] rhymers = { factory.GetStandardRhymer(), factory.GetFalseRhymer(),
