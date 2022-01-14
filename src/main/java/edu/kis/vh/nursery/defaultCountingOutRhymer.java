@@ -1,11 +1,11 @@
 package edu.kis.vh.nursery;
 
 public class defaultCountingOutRhymer {
-    public static final int Size_Tab = 12;
-    public static final int ErrCheck = -1;
-    public static final int Numb = 11;
-    // mam nadzieje ze wypiles kawe ktora ci zapazylem wczorajszego dnia, jak tam brzuszek ?
-    private  final int[] numbers = new int[Size_Tab];
+    public static final int SIZE_TAB = 12;
+    public static final int ERR_CHECK = -1;
+    public static final int NUMB = 11;
+
+    private  final int[] numbers = new int[SIZE_TAB];
 
     public int total = -1;
 
@@ -19,18 +19,18 @@ public class defaultCountingOutRhymer {
     }
 
     public boolean isFull() {
-        return total == Numb;
+        return total == NUMB;
     }
 
     protected int peekaboo() {
         if (callCheck())
-            return ErrCheck;
+            return ERR_CHECK;
         return numbers[total];
     }
 
     public int countOut() {
         if (callCheck())
-            return ErrCheck;
+            return ERR_CHECK;
         return numbers[total--];
     }
 
