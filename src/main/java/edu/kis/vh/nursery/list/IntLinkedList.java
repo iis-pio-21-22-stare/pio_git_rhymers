@@ -3,22 +3,22 @@ package edu.kis.vh.nursery.list;
 public class IntLinkedList {
 
 	public static final int BADCALL = -1;
-	Node lastNode;
-	int newElement;
+	private Node lastNode;
+	private int newElement;
 
 
 	public void push(int i) {
-		if (lastNode == null)
-			lastNode = new Node(i);
+		if (getLastNode() == null)
+			setLastNode(new Node(i));
 		else {
-			lastNode.next = new Node(i);
-			lastNode.next.prev = lastNode;
-			lastNode = lastNode.next;
+			getLastNode().setNext(new Node(i));
+			getLastNode().getNext().setPrev(getLastNode());
+			setLastNode(getLastNode().getNext());
 		}
 	}
 
 	public boolean isEmpty() {
-		return lastNode == null;
+		return getLastNode() == null;
 	}
 
 	public boolean isFull() {
@@ -28,15 +28,30 @@ public class IntLinkedList {
 	public int top() {
 		if (isEmpty())
 			return BADCALL;
-		return lastNode.value;
+		return getLastNode().getValue();
 	}
 
 	public int pop() {
 		if (isEmpty())
 			return BADCALL;
-		int ret = lastNode.value;
-		lastNode = lastNode.prev;
+		int ret = getLastNode().getValue();
+		setLastNode(getLastNode().getPrev());
 		return ret;
 	}
 
+	public Node getLastNode() {
+		return lastNode;
+	}
+
+	public void setLastNode(Node lastNode) {
+		this.lastNode = lastNode;
+	}
+
+	public int getNewElement() {
+		return newElement;
+	}
+
+	public void setNewElement(int newElement) {
+		this.newElement = newElement;
+	}
 }
