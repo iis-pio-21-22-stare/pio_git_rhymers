@@ -8,6 +8,7 @@ public class HanoiRhymer extends DefaultCountingOutRhymer {
 		return totalRejected;
 	}
 
+	@Override
 	public void countIn(int in) {
 		if (!callCheck() && in > peekaboo())
 			totalRejected++;
@@ -16,5 +17,6 @@ public class HanoiRhymer extends DefaultCountingOutRhymer {
 	}
 }
 
-//W HanoiRhymer były źle sformatowane 4 wiersze: 5,12,14 i 15
-//alt + -> i alt + <- w IDE IntelliJ IDEA zmienia obecnie otwartą kartę na następną lub poprzednią
+// W HanoiRhymer były źle sformatowane 4 wiersze: 5,12,14 i 15
+// alt + -> i alt + <- w IDE IntelliJ IDEA zmienia obecnie otwartą kartę na
+// następną lub poprzednią
