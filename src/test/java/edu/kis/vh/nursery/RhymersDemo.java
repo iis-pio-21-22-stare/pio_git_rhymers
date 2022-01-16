@@ -6,7 +6,7 @@ import edu.kis.vh.nursery.factory.RhymersFactory;
 class RhymersDemo {
 	public static final int BOUND = 20;
 	public static void main(String[] args) {
-		RhymersFactory factory = new DefaultRhymersFactory();
+		final RhymersFactory factory = new DefaultRhymersFactory();
 		
 		DefaultCountingOutRhymer[] rhymers = { factory.getStandardRhymer(), factory.getFalseRhymer(),
 				factory.getFIFORhymer(), factory.getHanoiRhymer()};
