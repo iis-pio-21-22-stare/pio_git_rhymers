@@ -6,17 +6,17 @@ public class IntLinkedList {
     private int value;
 
     public void push(final int value) {
-        if (last == null)
-            last = new Node(value);
+        if (getLast() == null)
+            setLast(new Node(value));
         else {
-            last.next = new Node(value);
-            last.next.prev = last;
-            last = last.next;
+            getLast().setNext(new Node(value));
+            getLast().getNext().setPrev(getLast());
+            setLast(getLast().getNext());
         }
     }
 
     public boolean isEmpty() {
-        return last == null;
+        return getLast() == null;
     }
 
     public boolean isFull() {
@@ -26,15 +26,30 @@ public class IntLinkedList {
     public int top() {
         if (isEmpty())
             return -1;
-        return last.value;
+        return getLast().getValue();
     }
 
     public int pop() {
         if (isEmpty())
             return -1;
-        int ret = last.value;
-        last = last.prev;
+        int ret = getLast().getValue();
+        setLast(getLast().getPrev());
         return ret;
     }
 
+    public Node getLast() {
+        return last;
+    }
+
+    public void setLast(Node last) {
+        this.last = last;
+    }
+
+    public int getValue() {
+        return value;
+    }
+
+    public void setValue(int value) {
+        this.value = value;
+    }
 }
