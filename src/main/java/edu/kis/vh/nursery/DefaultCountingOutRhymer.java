@@ -11,15 +11,15 @@ public class DefaultCountingOutRhymer {
 			NUMBERS[++total] = in;
 	}
 
-	public boolean callCheck() {
+	public boolean callCheck() { // TODO: final should be added
 		return total == -1;
 	}
 		
-	public boolean isFull() {
+	public boolean isFull() { // TODO: final should be added
 		return total == 11;
 	}
 
-	protected int peekaboo() {
+	protected int peekaboo() { // TODO: final should be added
 		if (callCheck())
 			return -1;
 		return NUMBERS[total];
