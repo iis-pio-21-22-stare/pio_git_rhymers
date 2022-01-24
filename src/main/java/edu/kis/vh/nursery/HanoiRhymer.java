@@ -14,7 +14,8 @@ public int reportrejected() {
 	return getTotalRejected();
 }
 
-public void countin(int in) {
+@Override
+public void countin(final int in) {
 if (!callcheck() && in > peekaboo())
 		setTotalRejected(getTotalRejected() + 1);
 		else
