@@ -7,12 +7,12 @@ import edu.kis.vh.nursery.DefaultCountingOutRhymer;
 // alt + -> przelacza miedzy kolejnymi zakladkami w prawo
 public interface RhymersFactory {
 
-    public DefaultCountingOutRhymer GetStandardRhymer();
+    public DefaultCountingOutRhymer getStandardRhymer();
 
-    public DefaultCountingOutRhymer GetFalseRhymer();
+    public DefaultCountingOutRhymer getFalseRhymer();
 
-    public DefaultCountingOutRhymer GetFIFORhymer();
+    public DefaultCountingOutRhymer getFifoRhymer();
 
-    public DefaultCountingOutRhymer GetHanoiRhymer();
+    public DefaultCountingOutRhymer getHanoiRhymer();
 
 }
