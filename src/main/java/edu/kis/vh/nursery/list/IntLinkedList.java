@@ -3,13 +3,13 @@ package edu.kis.vh.nursery.list;
 public class IntLinkedList {
 
     Node last;
-    int i;
+    int valueInt;
 
-    public void push(int i) {
+    public void push(int inputValue) {
         if (last == null)
-            last = new Node(i);
+            last = new Node(inputValue);
         else {
-            last.next = new Node(i);
+            last.next = new Node(inputValue);
             last.next.prev = last;
             last = last.next;
         }
