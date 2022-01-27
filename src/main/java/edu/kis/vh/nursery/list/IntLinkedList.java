@@ -47,9 +47,6 @@ public class IntLinkedList {
 		this.lastNode = lastNode;
 	}
 
-	public int getNewElement() {
-		return newElement;
-	}
 
 	public void setNewElement(int newElement) {
 		this.newElement = newElement;

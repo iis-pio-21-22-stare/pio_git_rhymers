@@ -27,9 +27,6 @@ public class DefaultCountingOutRhymer {
         return CHECK;
     }
 
-    public int getTotal() {
-        return total;
-    }
 
     public void countIn(int in) {
         if (!isFull())
