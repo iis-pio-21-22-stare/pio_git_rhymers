@@ -7,6 +7,14 @@ public class DefaultCountingOutRhymer {
     private static final int SIZE_OF_TABLE = 12;
     private int[] NUMBERS = new int[SIZE_OF_TABLE];
 
+    public int getTotal() {
+        return total;
+    }
+
+    public void setTotal(int total) {
+        this.total = total;
+    }
+
     private int total = EMPTY_RHYMER_INDICATOR;
 
 
