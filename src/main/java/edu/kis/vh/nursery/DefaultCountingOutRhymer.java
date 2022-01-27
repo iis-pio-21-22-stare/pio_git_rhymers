@@ -9,10 +9,6 @@ public class DefaultCountingOutRhymer {
 
     private int total = FAILED;
 
-    public void setTotal(int total) {
-        this.total = total;
-    }
-
     public int getTotal() {
         return total;
     }
