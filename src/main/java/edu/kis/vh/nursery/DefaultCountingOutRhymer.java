@@ -8,6 +8,14 @@ public class DefaultCountingOutRhymer {
 
     private int total = SET_TOTAL;
 
+    public int getTotal() {
+        return total;
+    }
+
+    public void setTotal(int total) {
+        this.total = total;
+    }
+
     public void countIn(int in) {
         if (!isFull())
             numbers[++total] = in;
