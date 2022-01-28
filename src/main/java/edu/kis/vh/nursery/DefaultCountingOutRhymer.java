@@ -5,9 +5,9 @@ public class DefaultCountingOutRhymer {
     private static final int LEN = 12;
     private static final int BEGIN_VAL = -1;
     private static final int LAST_INDEX = 11;
-    private  final int[] numbers = new int[LEN];
+    private final int[] numbers = new int[LEN];
 
-    private  int total = BEGIN_VAL;
+    private int total = BEGIN_VAL;
 
     public void countIn(final int in) {
         if (!isFull())
@@ -26,6 +26,10 @@ public class DefaultCountingOutRhymer {
         if (callCheck())
             return -1;
         return numbers[total];
+    }
+
+    public int getTotal() {
+        return total;
     }
 
     public int countOut() {
