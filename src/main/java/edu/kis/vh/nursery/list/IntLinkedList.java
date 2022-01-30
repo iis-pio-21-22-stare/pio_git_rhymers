@@ -5,7 +5,7 @@ public class IntLinkedList {
     private static final int _minus1 = -1;
 	Node last;
     int valueInt;
-
+    
     public void push(int inputValue) {
         if (last == null)
             last = new Node(inputValue);
@@ -23,13 +23,13 @@ public class IntLinkedList {
     public boolean isFull() {
         return false;
     }
-
+    
     public int top() {
         if (isEmpty())
             return _minus1;
         return last.value;
     }
-
+    
     public int pop() {
         if (isEmpty())
             return _minus1;
