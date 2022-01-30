@@ -18,4 +18,5 @@ public class FIFORhymer extends defaultCountingOutRhymer {
 		
 		return ret;
 	}
+//	dzieki kombinacji klawawiszy alt plus strzalka moge przeskakiwac miedzy otwartymi kartami
 }
