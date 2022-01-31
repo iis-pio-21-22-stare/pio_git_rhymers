@@ -1,17 +1,27 @@
 package edu.kis.vh.nursery;
+// alt + -> służy łatwemu przemieszczaniu się pomiędzy plikami w projekcie
+public class HanoiRhymer extends DefaultCountingOutRhymer {
 
-public class HanoiRhymer extends defaultCountingOutRhymer {
+	public static final int REJECTED_VALUE = 0;
+	int totalRejected = REJECTED_VALUE;
 
-int totalRejected = 0;
-
-	public int reportRejected() {
-		return totalRejected;
+	public int reportrejected() {
+		return getTotalRejected();
 	}
 
-	public void countIn(int in) {
-	if (!callCheck() && in > peekaboo())
-			totalRejected++;
+	@Override
+	public void countin(int in) {
+	if (!callcheck() && in > peekaboo())
+			setTotalRejected(getTotalRejected() + 1);
 			else
-				super.countIn(in);
+				super.countin(in);
 	}
+
+		public int getTotalRejected() {
+			return totalRejected;
+		}
+
+		public void setTotalRejected(int totalRejected) {
+			this.totalRejected = totalRejected;
+		}
 }
