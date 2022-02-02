@@ -6,7 +6,7 @@ public class DefaultCountingOutRhymer {
     public static final int LAST_INDEX_OF_ARAY = 11;
     public static final int FIRST_INDEX_OF_EMPTY_ARAY = -1;
 
-    private int[] numbers = new int[ARAY_SIZE];
+    private final int[] numbers = new int[ARAY_SIZE];
 
     public int total = FIRST_INDEX_OF_EMPTY_ARAY;
 
