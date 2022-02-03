@@ -2,7 +2,7 @@ package edu.kis.vh.nursery.list;
 
 public class IntLinkedList {
 
-    int value;
+    int value; //TODO: delete unnecessary variable
     Node last;
 
     private class Node {

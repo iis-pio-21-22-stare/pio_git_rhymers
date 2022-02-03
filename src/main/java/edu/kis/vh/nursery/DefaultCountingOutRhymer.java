@@ -24,6 +24,7 @@ public class DefaultCountingOutRhymer {
 		return total == LAST_ELEMENT;
 	}
 
+	//TODO: change method name to be more specific
 	protected int peekaboo() {
 		if (callCheck())
 			return -1;
