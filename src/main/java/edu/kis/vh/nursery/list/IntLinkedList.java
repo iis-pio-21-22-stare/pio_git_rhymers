@@ -4,7 +4,7 @@ public class IntLinkedList {
 
 	private final int EMPTY_ARRAY_RETURN_CODE = -1;
 	private final boolean FULL_ARRAY = false;
-	Node last;
+	private Node last;
 	int i;
 
 	public void push(int i) {
