@@ -28,6 +28,10 @@ public class DefaultCountingOutRhymer {
 		return numbers[total];
 	}
 
+	public int getTotal() {
+		return total;
+	}
+
 	public int countOut() {
 		if (callCheck())
 			return EMPTY_ARRAY;
