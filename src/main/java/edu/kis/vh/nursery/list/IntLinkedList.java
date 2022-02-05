@@ -5,15 +5,15 @@ public class IntLinkedList {
 	private final int EMPTY_ARRAY_RETURN_CODE = -1;
 	private final boolean FULL_ARRAY = false;
 	private Node last;
-	int i;
+	private int i;
 
 	public void push(int i) {
 		if (last == null)
 			last = new Node(i);
 		else {
-			last.next = new Node(i);
-			last.next.prev = last;
-			last = last.next;
+			last.setNext(new Node(i));
+			last.getNext().setPrev(last);
+			last = last.getNext();
 		}
 	}
 
@@ -28,15 +28,22 @@ public class IntLinkedList {
 	public int top() {
 		if (isEmpty())
 			return EMPTY_ARRAY_RETURN_CODE;
-		return last.value;
+		return last.getValue();
 	}
 
 	public int pop() {
 		if (isEmpty())
 			return EMPTY_ARRAY_RETURN_CODE;
-		int ret = last.value;
-		last = last.prev;
+		int ret = last.getValue();
+		last = last.getPrev();
 		return ret;
 	}
 
+	public int getI() {
+		return i;
+	}
+
+	public void setI(int i) {
+		this.i = i;
+	}
 }
