@@ -42,15 +42,7 @@ public class IntLinkedList {
         return last;
     }
 
-    public void setLast(Node last) {
-        this.last = last;
-    }
-
     public int getValueInt() {
         return valueInt;
-    }
-
-    public void setValueInt(int valueInt) {
-        this.valueInt = valueInt;
     }
 }
