@@ -2,6 +2,8 @@ package edu.kis.vh.nursery.list;
 
 public class IntLinkedList {
 
+	private final int EMPTY_ARRAY_RETURN_CODE = -1;
+	private final boolean FULL_ARRAY = false;
 	Node last;
 	int i;
 
@@ -20,18 +22,18 @@ public class IntLinkedList {
 	}
 
 	public boolean isFull() {
-		return false;
+		return FULL_ARRAY;
 	}
 
 	public int top() {
 		if (isEmpty())
-			return -1;
+			return EMPTY_ARRAY_RETURN_CODE;
 		return last.value;
 	}
 
 	public int pop() {
 		if (isEmpty())
-			return -1;
+			return EMPTY_ARRAY_RETURN_CODE;
 		int ret = last.value;
 		last = last.prev;
 		return ret;
