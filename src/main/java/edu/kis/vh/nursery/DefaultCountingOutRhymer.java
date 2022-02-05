@@ -12,6 +12,10 @@ public class DefaultCountingOutRhymer {
 
     private int total = EMPTY_ARRAY_RHYMERS;
 
+    public int getTotal() {
+        return total;
+    }
+
     public void countIn(int inputValue) {
         if (!isFull())
             numbers[++total] = inputValue;
